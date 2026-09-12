@@ -1,0 +1,151 @@
+{
+  "schema": "liquidity-ratio/v1",
+  "company": "Northwind Components",
+  "currency": "USD",
+  "period": "month",
+  "conventions": {
+    "currentRatio": "currentAssets / currentLiabilities",
+    "quickRatio": "(currentAssets - inventory) / currentLiabilities",
+    "cashRatio": "cash / currentLiabilities",
+    "mom": "this month ratio minus prior month ratio",
+    "vsTarget": "floors: meeting when value >= target"
+  },
+  "targets": {
+    "currentRatio": 1.8,
+    "quickRatio": 1.0,
+    "cashRatio": 0.25
+  },
+  "targetPolarity": {
+    "currentRatio": "floor",
+    "quickRatio": "floor",
+    "cashRatio": "floor"
+  },
+  "months": [
+    {
+      "month": "2025-01",
+      "currentAssets": 4200000,
+      "inventory": 1820000,
+      "cash": 640000,
+      "currentLiabilities": 2100000
+    },
+    {
+      "month": "2025-02",
+      "currentAssets": 4280000,
+      "inventory": 1880000,
+      "cash": 590000,
+      "currentLiabilities": 2180000
+    },
+    {
+      "month": "2025-03",
+      "currentAssets": 4460000,
+      "inventory": 1910000,
+      "cash": 720000,
+      "currentLiabilities": 2240000
+    },
+    {
+      "month": "2025-04",
+      "currentAssets": 4510000,
+      "inventory": 1950000,
+      "cash": 680000,
+      "currentLiabilities": 2310000
+    },
+    {
+      "month": "2025-05",
+      "currentAssets": 4690000,
+      "inventory": 2040000,
+      "cash": 610000,
+      "currentLiabilities": 2380000
+    },
+    {
+      "month": "2025-06",
+      "currentAssets": 4880000,
+      "inventory": 2180000,
+      "cash": 540000,
+      "currentLiabilities": 2520000
+    },
+    {
+      "month": "2025-07",
+      "currentAssets": 4720000,
+      "inventory": 2260000,
+      "cash": 410000,
+      "currentLiabilities": 2710000
+    },
+    {
+      "month": "2025-08",
+      "currentAssets": 4960000,
+      "inventory": 2210000,
+      "cash": 580000,
+      "currentLiabilities": 2580000
+    },
+    {
+      "month": "2025-09",
+      "currentAssets": 5180000,
+      "inventory": 2280000,
+      "cash": 760000,
+      "currentLiabilities": 2490000
+    },
+    {
+      "month": "2025-10",
+      "currentAssets": 5350000,
+      "inventory": 2320000,
+      "cash": 810000,
+      "currentLiabilities": 2560000
+    },
+    {
+      "month": "2025-11",
+      "currentAssets": 5620000,
+      "inventory": 2410000,
+      "cash": 890000,
+      "currentLiabilities": 2680000
+    },
+    {
+      "month": "2025-12",
+      "currentAssets": 5410000,
+      "inventory": 2580000,
+      "cash": 470000,
+      "currentLiabilities": 3120000
+    },
+    {
+      "month": "2026-01",
+      "currentAssets": 5280000,
+      "inventory": 2360000,
+      "cash": 620000,
+      "currentLiabilities": 2790000
+    },
+    {
+      "month": "2026-02",
+      "currentAssets": 5470000,
+      "inventory": 2390000,
+      "cash": 710000,
+      "currentLiabilities": 2720000
+    },
+    {
+      "month": "2026-03",
+      "currentAssets": 5690000,
+      "inventory": 2440000,
+      "cash": 840000,
+      "currentLiabilities": 2760000
+    },
+    {
+      "month": "2026-04",
+      "currentAssets": 5810000,
+      "inventory": 2480000,
+      "cash": 910000,
+      "currentLiabilities": 2810000
+    },
+    {
+      "month": "2026-05",
+      "currentAssets": 5940000,
+      "inventory": 2510000,
+      "cash": 980000,
+      "currentLiabilities": 2860000
+    },
+    {
+      "month": "2026-06",
+      "currentAssets": 6120000,
+      "inventory": 2550000,
+      "cash": 1050000,
+      "currentLiabilities": 2900000
+    }
+  ]
+}
